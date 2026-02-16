@@ -10,7 +10,7 @@ const configureDB = require('./config/db');
 configureDB();
 
 const artistCtlr = require('./app/controllers/artist-Controller');
-const eventCtlr = require('./app/controllers/event-controller');
+const eventCtlr = require('./app/controllers/event-Controller');
 
 app.post('/api/artist', artistCtlr.create);
 app.post('/api/event', eventCtlr.create);
