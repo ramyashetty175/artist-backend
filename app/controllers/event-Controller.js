@@ -37,7 +37,7 @@ eventCtlr.list = async(req, res) => {
         if(!event) {
            res.status(404).json({});
         }
-        res.status(201).json(event);
+        res.status(200).json(event);
     } catch(err) {
         console.log(err);
         res.status(500).json({ error: 'Something went wrong!!! '});
