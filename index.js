@@ -17,6 +17,10 @@ app.post('/api/event', eventCtlr.create);
 app.get('/api/event', eventCtlr.list);
 app.get('/api/event/:id', eventCtlr.show);
 
+app.get("/", (req, res) => {
+   res.send("Backend is running");
+});
+
 app.listen(port, () => {
     console.log("server is running on port " + port);
 }) 
