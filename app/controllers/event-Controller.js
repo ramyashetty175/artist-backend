@@ -32,6 +32,7 @@ eventCtlr.create = async(req, res) => {
     }
 }
 
+// 
 eventCtlr.list = async(req, res) => {
     try {
         const event = await Event.find();
