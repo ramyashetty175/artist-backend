@@ -12,6 +12,7 @@ artistCtlr.create = async(req, res) => {
         res.status(201).json(artist);
     } catch(err) {
        console.log(err);
+       console.log(err.response?.data || err.message || err);
        res.status(500).json({ error: 'Something went wrong!!!' });
     }
 }
